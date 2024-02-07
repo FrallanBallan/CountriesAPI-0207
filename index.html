@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rest Countries</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,600;6..12,800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/1fa94f2f1a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <h1>Where in the World?</h1>
+        <button class="lightDark">
+          <i class="fa-solid fa-sun iconLightDark"></i>Lightmode
+        </button>
+      </div>
+    </header>
+    <div class="filterSearch">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" placeholder="Search a Country" class="searchBox" />
+      <select name="continent" class="continentSelect">
+        <option value="All">All</option>
+        <option value="Europe">Europe</option>
+        <option value="Africa">Africa</option>
+        <option value="North America">North America</option>
+        <option value="South America">South America</option>
+        <option value="Asia">Asia</option>
+        <option value="Oceania">Oceania</option>
+      </select>
+    </div>
+    <div class="countryGrid"></div>
+  </body>
+</html>
